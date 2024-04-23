@@ -123,7 +123,7 @@ chekoutBtn.addEventListener("click", function() {
   const isOpen = checkRstaurantOpen()
   if(!isOpen) {
     Toastify({
-      text: "A loja está fechada no momento!!",
+      text: "A loja está fechada no momento!",
       duration: 3000,
       close: true,
       gravity: "top", 
