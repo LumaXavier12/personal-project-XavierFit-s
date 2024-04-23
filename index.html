@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+  <link rel="stylesheet" href="./styles/output.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Xavier Fit's</title>
+</head>
+
+<body>
+  <header class="w-full h-[350px] bg-zinc-900 bg-home bg-center bg-cover">
+    <div class="w-full h-full flex flex-col items-center justify-center">
+      <h1 class="text-4xl mt-4 mb-2 font-bold text-black">Xavier Fit's</h1>
+      <span class="text-green-950 font-medium">Rua Pedro Sampaio - 125, Centro - São Paulo-SP</span>
+
+      <div class="bg-green-600 px-4 py-1 rounded-lg mt-5" id="date-span">
+        <span class="text-white font-medium">Seg á Sex - 09h as 17h</span>
+      </div>
+
+    </div>
+  </header>
+
+  <h2 class="text-2xl md:text-3xl font-bold text-center mt-9 mb-6">
+    Conheça nossos produtos
+  </h2>
+
+  <div id="menu">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-7 md:gap-10 mx-auto max-w-7xl px-2 mb-16">
+      <div class="flex gap-2">
+        <img src="./assets/creatine-bigboom.jpg" alt="Creatine BigBoom"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+        <div>
+          <p class="font-bold">Creatina BigBoom</p>
+          <p class="text-sm">O Big Boom Shape é uma ferramenta poderosa, especialmente para mulheres que desejam
+            tonificar
+            seus músculos, ganhar massa muscular e melhorar sua saúde geral.
+          </p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$129.99</p>
+            <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Creatina BigBoom" data-price="129.99">
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex gap-2">
+        <img src="./assets/creatine-max.png" alt="Creatine Max"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+        <div>
+          <p class="font-bold">Creatina Max</p>
+          <p class="text-sm">A Creatina Max melhora a performance e aumenta a força nos treinos, revigora as fontes de
+            energia e auxilia no ganho de massa muscular.
+          </p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$109.99</p>
+            <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Creatina Max" data-price="109.99">
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex gap-2">
+        <img src="./assets/creatine-pure.jpeg" alt="Creatine Pure Integral Medica"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+        <div>
+          <p class="font-bold">Creatina Pure Integral Medica</p>
+          <p class="text-sm">A Creatina Pure Integral Medica oferece uma maneira segura e eficaz de potencializar os
+            treinos e alcançar resultados superiores.
+          </p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$119.99</p>
+            <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Creatine Pure Integral Medica"
+              data-price="119.99">
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex gap-2">
+        <img src="./assets/creatine-combo-max.webp" alt="Combo Creatina Max "
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+        <div>
+          <p class="font-bold">Combo Creatina Max</p>
+          <p class="text-sm">Garanta a eficácia e uma melhor performance dos seus treinos por mais tempo, o Combo
+            Creatina Max é o trio perfeito para alcançar seus objetivos.
+          </p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$299.90</p>
+            <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Combo Creatina Max" data-price="299.90">
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex gap-2">
+        <img src="./assets/dreams-coffee.webp" alt="Dreams Coffee"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+        <div>
+          <p class="font-bold">Dreams Coffee</p>
+          <p class="text-sm">O Dreams coffe é um café termogênico composto por uma combinação perfeita de 7 ingredientes
+            naturais (pysillium, pimenta preta, café verde, taurina, carnitina, chá-verde e canela) que juntos aceleram
+            o
+            metabolismo, tornado-o eficiente e auxiliando na queima de gordura, melhoram o foco e a concentração e
+            oferecem mais energia para os treinos.
+          </p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$209.99</p>
+            <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Dreams Coffee" data-price="209.99">
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex gap-2">
+        <img src="./assets/whey-pure.png" alt="Whey 100% Pure"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+        <div>
+          <p class="font-bold">Whey 100% Pure</p>
+          <p class="text-sm">O Whey 100% Pure é o suplemento ideal e essencial para quem busca ganho de massa magra e
+            recuperação muscular. Composto pela proteína concentrada do soro de leite, são 20 g de proteína por dose,
+            9,7
+            g de aminoácidos essenciais e 4,6 g de BCAA.
+          </p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$99.99</p>
+            <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Whew 100% Pure" data-price="99.99">
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex gap-2">
+        <img src="./assets/multi-vitaminas-pure.webp" alt="Multivitaminas Pure"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+        <div>
+          <p class="font-bold">Multivitaminas Pure 60cap</p>
+          <p class="text-sm">Com o Multivitamínico Pure, além de aquirir mais energia para o seu dia a dia e nos
+            treinos, ele fornece a quaantidade ideal de vitaminas que seu corpo precisa. Ele é um excelente aliado para
+            aquelas pessoas que desejam ter também, uma boa memória e estar sempre de bom humor.
+          </p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$49.99</p>
+            <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Multivitaminas Pure" data-price="49.99">
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex gap-2">
+        <img src="./assets/multi-vitaminas.png" alt="Multivitaminas Growth"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+        <div>
+          <p class="font-bold">Multivitaminas Growth 60cap</p>
+          <p class="text-sm">O Multivitamínico Growth é um suplemento que oferece ao corpo nutrientes indispensáveis,
+            colaborando diretamente para a sua recuperação muscular. Aliado a hábitos saudáveis, como uma rotina regular
+            de exercícios e uma alimentação balanceada, ele ajuda a garantir o bom funcionamento do organismo.
+          </p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$69.99</p>
+            <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="MMultivitaminas Growth"
+              data-price="69.99">
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex gap-2">
+        <img src="./assets/termo-capsula.jpg" alt="Termogênico Capsulas"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+        <div>
+          <p class="font-bold">Termogênico - Cafeína e TCM</p>
+          <p class="text-sm">Este termogênico é um suplemento alimentar que pode ajudar na queima de gordura corporal.
+            Ele contém substâncias, como chá verde, gengibre, guaraná e pimenta, que possuem propriedades termogênicas,
+            capazes de aumentar o gasto energético do corpo.
+          </p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$59.99</p>
+            <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="Termogênico - Cafeína e TCM"
+              data-price="59.99">
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex gap-2">
+        <img src="./assets/Yo-Pro.png" alt="YoPro Iorgute"
+          class="w-28 h-28 rounded-md hover:scale-110 hover:-rotate-2 duration-300" />
+
+        <div>
+          <p class="font-bold">YoPro Iorgute</p>
+          <p class="text-sm">O YoPRO Shake Proteico 250ml contém 15g de proteínas, que proporcionam saciedade e auxiliam
+            na construção e recuperação muscular. Composto por Whey e Caseína, também é zero lactose, zero adição de
+            açúcares, tem baixo teor de gorduras e é fonte de cálcio. Um aliado perfeito para uma rotina regular de
+            treinos e alimentação saudável.
+          </p>
+
+          <div class="flex items-center gap-2 justify-between mt-3">
+            <p class="font-bold text-lg">R$9.99</p>
+            <button class="bg-gray-900 px-5 rounded add-to-cart-btn" data-name="TYoPro IorguteM" data-price="9.99">
+              <i class="fa fa-cart-plus text-lg text-white"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </main>
+
+    <div class="bg-black/60 w-full h-full fixed top-0 left-0 z-[99] items-center justify-center hidden" id="cart-modal">
+      <div class="bg-white p-5 rounded-md min-w-[90%] md:min-[600px]">
+        <h2 class="text-center font-bold text-2xl mb-2">Meu carrinho
+        </h2>
+        <div id="cart-items" class="flex justify-between mb-2 flex-col"></div>
+        <p class="font-bold">Total: <span id="cart-total">R$ 0.00</span></p>
+
+        <p class="font-bold mt-4">Endereço de entrega:</p>
+        <input type="text" placeholder="Digite seu endreço completo..." id="address"
+          class="w-full border-2 p-1 rounded my-1" />
+        <p class="text-red-500 hidden" id="address-warn">
+          Digite seu endereço completo!
+        </p>
+
+        <div class="flex items-center justify-between mt-5 w-full">
+          <button id="close-modal-btn">Fechar</button>
+          <button id="chekout-btn" class="bg-green-500 text-white px-4 py-1 rounded">
+            Finalizar pedido
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+
+    <footer class="w-full bg-red-500 py-2 fixed bottom-0 z-40 flex items-center justify-center">
+      <button class="flex items-center gap-2 text-white font-bold" id="cart-btn">
+        (<span id="cart-count">0</span>)
+        Meu carrinho
+        <i class="fa fa-cart-plus text-lg text-white"></i>
+      </button>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
